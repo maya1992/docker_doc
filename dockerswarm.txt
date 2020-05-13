@@ -1,0 +1,9 @@
+run below command on manager instance to initiate docker swarm
+       docker swarm init --advertise-addr 13.233.161.161 (this is public ip of manager instance)
+
+now we need to copy and paste the output in worker nodes:
+
+ docker swarm join --token SWMTKN-1-6d2vdevavrqt95ls5huophjrsk1k4yn4j77px8s4ufrv2x95wb-4mjfbkqrg1leax60rb30obp2g 13.233.161.161:2377
+
+after paste this output . worker nodes will join the swarm as worker
+
